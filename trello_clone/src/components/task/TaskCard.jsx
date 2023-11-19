@@ -22,6 +22,7 @@ export const TaskCard = () => {
       <Tasks
         taskList={taskList}
         inputText={inputText}
+        setTaskList={setTaskList}
       />
     </div>
   )

@@ -1,12 +1,21 @@
 import React from 'react'
+import {v4 as uuid} from 'uuid';
 
 export const TaskAddInput = ({inputText,setInputText,setTaskList,taskList}) => {
   
   const handleSubmit = (e) =>{
+    const taskId = uuid();
     e.preventDefault();
+    if(inputText.trim(" ") === ""){
+      alert("What's the task");
+      return;
+    }
     setTaskList([
       ...taskList,
-      {text:inputText,},
+      {
+        id: taskId,
+        text:inputText,
+      },
     ]);
     setInputText("");
   };
