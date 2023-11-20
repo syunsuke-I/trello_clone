@@ -1,0 +1,125 @@
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.app{
+  background: url(../src/imgs/staffan.jpg);
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+.header-holder{
+  width: 17%;
+  padding: 5px;
+  position: center;
+}
+
+.header{
+  margin-left: 5%;
+  color:white;
+  opacity: 90%;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+.taskCard{
+  width: 250px;
+  padding: 10px 25px;
+  margin: 10px 1%;
+  background-color: blanchedalmond;
+  opacity: 90%;
+}
+
+.taskCardInputArea{
+  margin-bottom: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.taskCardInputTitle{
+  width: 80px;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.taskAddInput{
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.taskBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  margin-top: 10px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 1px rgb(75,75,75);
+
+}
+
+.taskText{
+  margin-left: 12px;
+}
+
+.taskTrashButton{
+  margin-right: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.taskCardArea{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.addTaskCardButtonArea{
+  margin-left: 1%;
+  margin-top: 25px;
+}
+
+.addTaskCardButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+  border-radius:50%;
+  width: 25px;
+  height: 25px;
+  font-size: 30px;
+  background-color: rgb(221,194,162);
+  box-shadow: 3px 3px 8px 1px black;
+}
+
+.addTaskCardButton:hover{
+  box-shadow: none;
+  transform: (3px, 3px);
+}
+
+
+.taskCardAndTaskCardDeleteButton{
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskCardDeleteButton{
+  border: none;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
